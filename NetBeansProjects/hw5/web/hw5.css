@@ -1,6 +1,6 @@
 body{font-family: tahoma; color: #696969; background-color: #D2B48C;text-align: center}
 h1{text-align: center; color: #696969;}
-a{color: darkred}
+a{color: #696969;}
 th{color: #696969; background-color: #FFFF99;}
 td{padding-bottom: 6px; padding-right: 6px}
 tr:nth-child(odd) {background-color: #F08080; color: #FFFFFF;}
