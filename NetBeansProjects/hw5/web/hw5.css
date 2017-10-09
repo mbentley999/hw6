@@ -1,7 +1,8 @@
-body{font-family: tahoma; color: darkred; background-color: black;text-align: center}
-h1{text-align: center; color: #be1204;}
+body{font-family: tahoma; color: #696969; background-color: #D2B48C;text-align: center}
+h1{text-align: center; color: #696969;}
 a{color: darkred}
-th{color: black; background-color: #be1204;}
+th{color: #696969; background-color: #FFFF99;}
 td{padding-bottom: 6px; padding-right: 6px}
-tr:nth-child(odd) {background-color: #666666; color: black;}
-table{width: 100%; border: 4px solid darkred; padding: 8px}
+tr:nth-child(odd) {background-color: #F08080; color: #FFFFFF;}
+tr:nth-child(even) {background-color: #F08080; color: #FFFFFF;}
+table{width: 100%; border: 10px; border-style: solid; border-color: silver; }

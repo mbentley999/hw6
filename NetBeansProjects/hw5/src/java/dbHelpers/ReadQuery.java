@@ -66,12 +66,13 @@ public class ReadQuery {
         
         table += "<table>";
         
-         table += "<tr>";
+        table += "<tr>";
             table += "<th>Videogame ID</th>";
             table += "<th>Name</th>";
             table += "<th>Years Old</th>";
             table += "<th>Gametype</th>";
             table += "<th>Personal Rating</th>";
+            table += "<th>Modifications</th>";
         table += "</tr>";
         
         try {
@@ -98,6 +99,9 @@ public class ReadQuery {
                     table += "<td>";
                         table += videogame.getGame_type();
                     table += "</td>";    
+                    table += "<td>";
+                        table += videogame.getRating();
+                    table += "</td>";
                     table += "<td>";
                         table += videogame.getRating();
                     table += "</td>";
