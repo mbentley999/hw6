@@ -1,8 +1,12 @@
-body{font-family: tahoma; color: #696969; background-color: #D2B48C;text-align: center}
+body{font-family: tahoma; color: #FFFFFF; background-color: #D2B48C;text-align: center}
 h1{text-align: center; color: #696969;}
+
 a{color: #696969;}
-th{color: #696969; background-color: #FFFF99;}
-td{padding-bottom: 6px; padding-right: 6px}
-tr:nth-child(odd) {background-color: #F08080; color: #FFFFFF;}
-tr:nth-child(even) {background-color: #F08080; color: #FFFFFF;}
-table{width: 100%; border: 10px; border-style: solid; border-color: silver; }
+
+table, th, td{vertical-align: middle; width: 100%; border: 6px solid #FFFFFF;}
+
+table{border-collapse: collapse; background-color: #F08080}
+th{padding-top: 4px; padding-bottom: 4px; color: #696969; background-color: #FFFF99; border: 1px solid #FFFFFF; height: 20px;}
+td{padding: 3px; height: 25px; border: 1px solid #FFFFFF;}
+tr:hover {background-color: #CCCCCC;}
+tr:nth-child(odd) {background-color: #EDEDED; color: #696969}
