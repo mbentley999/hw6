@@ -72,13 +72,14 @@ public class ReadQuery {
             table += "<th>Years Old</th>";
             table += "<th>Gametype</th>";
             table += "<th>Personal Rating</th>";
-            table += "<th>Modifications</th>";
+            table += "<th>Modifications(WIP)</th>";
         table += "</tr>";
         
         try {
             while(this.results.next()){
                 
                 Videogames videogame = new Videogames();
+                String future = "Modify Delete";
                 
                 videogame.setV_id(this.results.getInt("v_id"));
                 videogame.setV_name(this.results.getString("v_name"));
@@ -103,7 +104,7 @@ public class ReadQuery {
                         table += videogame.getRating();
                     table += "</td>";
                     table += "<td>";
-                        table += videogame.getRating();
+                        table += future;
                     table += "</td>";
                 table += "</tr>";
                 

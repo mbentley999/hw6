@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Videogame</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'hw5.css'/>
     </head>
     <body>
         <h1>Add A New Videogame</h1>
@@ -27,7 +28,9 @@
             <label>Rating:</label>
             <input type="text" name="rating" value="" /><br>
             
-            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" value="Clear" id="Clear">
+            <input type="submit" name="submit" value="Submit">
+            
         </form>
     </body>
 </html>
