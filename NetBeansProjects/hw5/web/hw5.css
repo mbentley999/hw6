@@ -1,12 +1,62 @@
-body{font-family: tahoma; color: #FFFFFF; background-color: #D2B48C;text-align: center}
-h1{text-align: center; color: #696969;}
+body{font-family: tahoma; 
+     color: #FFFFFF; 
+     background-color: #D2B48C;
+     text-align: center;}
+h1{text-align: center;
+   color: #696969;}
 
 a{color: #696969;}
 
-table, th, td{vertical-align: middle; width: 100%; border: 6px solid #FFFFFF;}
+table, th, td{vertical-align: middle; 
+              border: 6px solid #FFFFFF;}
 
-table{border-collapse: collapse; background-color: #F08080}
-th{padding-top: 4px; padding-bottom: 4px; color: #696969; background-color: #FFFF99; border: 1px solid #FFFFFF; height: 20px;}
-td{padding: 3px; height: 25px; border: 1px solid #FFFFFF;}
+table{border-collapse: collapse; 
+      background-color: #F08080; 
+      width: 100%;}
+
+th{padding-top: 4px; 
+   padding-bottom: 4px; 
+   color: #696969; 
+   background-color: #FFFF99; 
+   border: 1px solid #FFFFFF; 
+   height: 20px;}
+
+td{padding: 3px; 
+   height: 25px; 
+   border: 1px solid #FFFFFF;}
+
+tr:nth-child(odd) {background-color: #EDEDED; color: #696969;}
 tr:hover {background-color: #CCCCCC;}
-tr:nth-child(odd) {background-color: #EDEDED; color: #696969}
+
+.addpage input[type="text"]{
+    box-sizing: border-box;
+    background-color: #FFFF99;
+    margin-bottom: 2%;
+    border: 1px solid #696969;
+    height: 30px;
+}
+
+.addpage input[type="text"]:focus{
+    box-shadow: 5px #F08080;
+    padding: 2%;
+    border: 1px solid blue;
+}
+
+.buttons input[type="reset"]{
+    background-color: white;
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 8px;
+    border: 2px solid #696969;
+    border-radius: 10px;
+}
+
+.buttons input[type="submit"]{
+    border: 2px solid green;
+    background-color: white;
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    
+}

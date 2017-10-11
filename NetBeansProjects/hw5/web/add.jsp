@@ -15,6 +15,7 @@
     <body>
         <h1>Add A New Videogame</h1>
         
+        <div class="addpage">
         <form name="addForm" action="addFriend" method="get">
             <label>Videogame Name:</label>
             <input type="text" name="name" value="" /><br>
@@ -27,10 +28,11 @@
             
             <label>Rating:</label>
             <input type="text" name="rating" value="" /><br>
-            
-            <input type="reset" value="Clear" id="Clear">
+        </div>
+        <div class="buttons">
+            <input type="reset" id="clear" value="Clear">
             <input type="submit" name="submit" value="Submit">
-            
+        </div>
         </form>
     </body>
 </html>
