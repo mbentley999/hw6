@@ -85,6 +85,7 @@ public class ReadQuery {
             while(this.results.next()){
                 
                 Videogames videogame = new Videogames();
+                String dconfirm = " onclick=\"return confirm('Confirm deletion?')\"";
                 
                 videogame.setV_id(this.results.getInt("v_id"));
                 videogame.setV_name(this.results.getString("v_name"));
@@ -111,7 +112,7 @@ public class ReadQuery {
                     table += "<td>";
                         table += "<a href=update?v_id=" + videogame.getV_id() + ">Update</a>";
                         table += " ";
-                        table += "<a href=delete?v_id=" + videogame.getV_id() + ">Delete </a>";
+                        table += "<a href=delete?v_id=" + videogame.getV_id() + dconfirm + ">Delete </a>";
                     table += "</td>";
                 table += "</tr>";
                 

@@ -30,7 +30,7 @@
             <input type="text" name="rating" value="<%= videogame.getRating() %>" /><br>
         </div>
         <div class="buttons">
-            <input type="reset" id="clear" value="Clear">
+            <input type="reset" id="clear" value="Reset">
             <input type="submit" name="submit" value="Update">
         </div>
         </form>
