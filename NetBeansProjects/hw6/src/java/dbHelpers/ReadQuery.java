@@ -81,7 +81,7 @@ public class ReadQuery {
                     table += "<td colspan='6'> Sorry, no records matched your search</td>";
                 table += "<tr>";
             }
-            
+            else{
             while(this.results.next()){
                 
                 Videogames videogame = new Videogames();
@@ -115,7 +115,7 @@ public class ReadQuery {
                 
                 
             } // end of loop
-        } catch (SQLException ex) {
+        }} catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
