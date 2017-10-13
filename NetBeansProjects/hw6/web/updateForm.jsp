@@ -15,7 +15,7 @@
         <div class="addpage">
         <form name="updateForm" action="updateFriend" method="get">
             <label>Videogame ID:</label>
-            <input type="text" name="vid" value="<%= videogame.getV_id() %>" /><br>
+            <input type="text" name="vid" value="<%= videogame.getV_id() %>" readonly/><br>
             
             <label>Videogame Name:</label>
             <input type="text" name="name" value="<%= videogame.getV_name() %>" /><br>

@@ -43,6 +43,15 @@ tr:hover {background-color: #CCCCCC;}
     border: 1px solid blue;
 }
 
+.addpage input[readonly]{
+    background-color: #cccccc;
+}
+
+.addpage input[readonly]:focus{
+    background-color: #cccccc;
+    border: 1px solid #696969;
+}
+
 .buttons input[type="reset"]{
     background-color: white;
     font-family: tahoma;
