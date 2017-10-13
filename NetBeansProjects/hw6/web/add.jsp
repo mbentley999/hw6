@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add Videogame</title>
-        <link rel = 'stylesheet' type = 'text/css' href = 'hw5.css'/>
+        <link rel = 'stylesheet' type = 'text/css' href = 'hw6.css'/>
     </head>
     <body>
         <h1>Add A New Videogame</h1>

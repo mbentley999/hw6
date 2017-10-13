@@ -109,7 +109,9 @@ public class ReadQuery {
                         table += videogame.getRating();
                     table += "</td>";
                     table += "<td>";
-                        table += "<a href=delete?v_id=" + videogame.getV_id() + "> Delete </a>";
+                        table += "<a href=update?v_id=" + videogame.getV_id() + ">Update</a>";
+                        table += " ";
+                        table += "<a href=delete?v_id=" + videogame.getV_id() + ">Delete </a>";
                     table += "</td>";
                 table += "</tr>";
                 
