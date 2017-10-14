@@ -85,7 +85,7 @@ public class ReadQuery {
             while(this.results.next()){
                 
                 Videogames videogame = new Videogames();
-                String dconfirm = " onclick=\"return confirm('Confirm deletion?')\"";
+                String dconfirm = " onclick=\"return confirm('Confirm deletion? - Matt Bentley')\"";
                 
                 videogame.setV_id(this.results.getInt("v_id"));
                 videogame.setV_name(this.results.getString("v_name"));

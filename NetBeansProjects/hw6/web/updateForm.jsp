@@ -10,6 +10,11 @@
         <link rel = 'stylesheet' type = 'text/css' href = 'hw6.css'/>
     </head>
     <body>
+        <div class="wrap">
+            <%@ include file="includes/header.jsp"%>
+            <%@ include file="includes/menu.jsp"%>   
+            
+        <div class="main">
         <h1>Update A Videogame</h1>
         
         <div class="addpage">
@@ -34,5 +39,10 @@
             <input type="submit" name="submit" value="Update">
         </div>
         </form>
+        </div>
+        
+            <%@include file="includes/footer.jsp"%>
+            
+        </div>
     </body>
 </html>

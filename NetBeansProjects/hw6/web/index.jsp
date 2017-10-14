@@ -1,9 +1,3 @@
-<%-- 
-    Document   : homepage
-    Created on : Oct 5, 2017, 2:54:15 PM
-    Author     : mattbentley
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,10 +7,19 @@
         <link rel = 'stylesheet' type = 'text/css' href = 'hw6.css'/>
         
     </head>
-    <body>
+    <body> 
+        <div class="wrap">
+            <%@ include file="includes/header.jsp"%>
+            <%@ include file="includes/menu.jsp"%>   
+            
+        <div class="main">    
         <h1>Videogame Database Starting Page</h1>
         
-        <a href="read">View all Videogames</a><br><br>
-        <a href="search.jsp">Search A Videogame</a>
+       
+        </div>
+        
+            <%@include file="includes/footer.jsp"%>
+            
+        </div>
     </body>
 </html>
