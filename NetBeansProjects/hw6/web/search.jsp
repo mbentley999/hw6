@@ -21,10 +21,10 @@
             <input type="submit" name="submit" value="Search"/>
         </div>    
         </form>
-        </div>
+            </div>
         
             <%@include file="includes/footer.jsp"%>
             
-        </div>    
+        </div>
     </body>
 </html>
