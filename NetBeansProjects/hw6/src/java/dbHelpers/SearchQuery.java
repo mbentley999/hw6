@@ -1,35 +1,35 @@
 package dbHelpers;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.util.Properties;
 import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.PreparedStatement;
 import model.Videogames;
-        
-public class ReadQuery {
+
+
+public class SearchQuery {
     
     private Connection conn;
     private ResultSet results;
     
-    public ReadQuery(){
-        
+    public SearchQuery(){
         Properties props = new Properties();
         InputStream instr = getClass().getResourceAsStream("dbConnection.properties");
         try {
             props.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         String driver = props.getProperty("driver.name");
@@ -39,26 +39,27 @@ public class ReadQuery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn = DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
     } // end of method
     
-    public void doRead(){
+    public void doSearch(String v_name){
         try {
-            String query = "Select * FROM video_games ORDER BY v_id ASC";
+            String query = "Select * from video_games WHERE UPPER(v_name) LIKE ? ORDER BY v_id ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
+            ps.setString(1, "%" + v_name.toUpperCase() + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-    } // end of method
+    }
     
     public String getHtmlTable(){
         
@@ -119,7 +120,7 @@ public class ReadQuery {
                 
             } // end of loop
         }} catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         table += "</table>";

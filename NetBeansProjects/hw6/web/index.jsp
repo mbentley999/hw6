@@ -16,6 +16,7 @@
     <body>
         <h1>Videogame Database Starting Page</h1>
         
-        <a href="read">View all Videogames</a>
+        <a href="read">View all Videogames</a><br><br>
+        <a href="search.jsp">Search A Videogame</a>
     </body>
 </html>

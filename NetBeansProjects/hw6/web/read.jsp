@@ -13,8 +13,8 @@
         <h1>Videogame Database</h1>
         <%= table %>
         
-        <br><br>
-        
-        <a href="add">Add A New Videogame</a>
+        <br>      
+        <a href="add">Add A New Videogame</a>&nbsp;&nbsp;
+        <a href="search.jsp">Search A Videogame</a>  
     </body>
 </html>
