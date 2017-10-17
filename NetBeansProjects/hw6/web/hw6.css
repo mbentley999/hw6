@@ -24,7 +24,7 @@ a:hover{
       margin-top: 25px;
       margin-bottom: 25px;
     color: black;
-}
+} /* css for update page*/
 
 .header{background-color: #D2B48C;
         text-align: left;
@@ -38,8 +38,7 @@ a:hover{
 .headerimg2{
     text-align: center;
     float: right;
-    width: 200px;
-   
+    width: 200px; 
 }
 .headertitle{
     float: left;
@@ -50,7 +49,7 @@ a:hover{
     background-color: #FFFF99;
     border-radius: 10px;
     color: black;
-}
+} /* css for header portion*/
 
 .main{background-color: #D2B48C;
       text-align: left; 
@@ -73,20 +72,18 @@ table, th{vertical-align: middle;
 table{border-collapse: collapse; 
       background-color: #F08080; 
       width: 100%;}
-
 th{padding-top: 4px; 
    padding-bottom: 4px; 
    color: #696969; 
    background-color: #FFFF99; 
    border: 1px solid #FFFFFF; 
    height: 20px;}
-
 td{vertical-align: middle;
    padding: 3px; 
    height: 25px; 
    border: 1px solid #FFFFFF;}
-
-tr:nth-child(odd) {background-color: #EDEDED; color: #696969;}
+tr:nth-child(odd) {background-color: #EDEDED; 
+                   color: #696969;}
 tr:hover {background-color: #CCCCCC;}
 
 .addpage input[type="text"]{
