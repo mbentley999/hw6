@@ -49,12 +49,15 @@ public class SearchQuery {
         
     } // end of method
     
-    public void doSearch(String v_name){
+    public void doSearch(String dog){
         try {
-            String query = "Select * from video_games WHERE UPPER(v_name) LIKE ? ORDER BY v_id ASC";
+            String query = "Select * from video_games WHERE UPPER(v_name) LIKE ? OR UPPER(game_type) LIKE ? OR rating LIKE ? or years_old LIKE ? ORDER BY v_id ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
-            ps.setString(1, "%" + v_name.toUpperCase() + "%");
+            ps.setString(1, "%" + dog.toUpperCase() + "%");
+            ps.setString(2, "%" + dog.toUpperCase() + "%");
+            ps.setString(3, "%" + dog + "%");
+            ps.setString(4, "%" + dog + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);

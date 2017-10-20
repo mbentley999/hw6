@@ -75,11 +75,11 @@ public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        String v_name = request.getParameter("searchVal");
+        String dog = request.getParameter("searchVal");
         
         SearchQuery sq = new SearchQuery();
         
-        sq.doSearch(v_name);
+        sq.doSearch(dog);
         String table = sq.getHtmlTable();
         
         request.setAttribute("table", table);
