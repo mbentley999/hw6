@@ -17,7 +17,7 @@
         <div class="addpage">
         <form name="searchForm" action="search" method="get">
             
-            <label>Videogame Name </label>
+            <label>Videogame Keyword: </label>
             <input type="text" name="searchVal" value=""/><br>
                 <div class="buttons">
                 <input type="submit" name="submit" value="Search"/>
